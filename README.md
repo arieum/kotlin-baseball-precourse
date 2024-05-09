@@ -17,3 +17,5 @@ Kotlin을 사용하여 구현한 숫자 야구 게임이다
 <pre>cd kotlin-baseball-precourse/</pre>
 <pre>kotlinc -script ./main.kts</pre>
 
+## 테스트 코드 - JUnit5
+<pre>src/test/kotlin/ExampleUnitTest.kt</pre>
