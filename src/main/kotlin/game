@@ -29,12 +29,12 @@ fun main() {
         }
         catch (e : IllegalArgumentException){
             println(e.message)
-            break
+            return
         }
 
         if (userInput.length != 3 || !userInput.all { it.isDigit() }){
             println("잘못 입력하셨습니다.")
-            continue
+            return
         }
 
         is3Str = evaluate(userInput)
@@ -45,7 +45,7 @@ fun main() {
         //println("end_condition : "+ end_condition)
 
         if (endCondition == "Continue") main()
-        if (endCondition=="End") break
+        if (endCondition=="End") return
     }
 }
 
